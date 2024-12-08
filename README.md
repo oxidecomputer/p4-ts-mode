@@ -78,8 +78,11 @@ To contribute, just open a pull request!
 - Let's write a tree-sitter major mode -
   [https://www.masteringemacs.org/article/lets-write-a-treesitter-major-mode](https://www.masteringemacs.org/article/lets-write-a-treesitter-major-mode)
 
-- The de facto P4_16 mode for emacs -
+- P4_16 Language Specification -
   [https://p4.org/p4-spec/docs/P4-16-v1.0.0-spec.html](https://p4.org/p4-spec/docs/P4-16-v1.0.0-spec.html)
+
+- The de facto P4_16 mode for emacs -
+  [https://github.com/p4lang/tutorials/blob/master/vm/p4_16-mode.el](https://github.com/p4lang/tutorials/blob/master/vm/p4_16-mode.el)
 
 
 [tree-sitter]: https://tree-sitter.github.io/tree-sitter/
