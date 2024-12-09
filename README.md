@@ -8,7 +8,7 @@ package for syntax highlighting and code navigation.
 If you're running an Emacs that's older than 29 or a version compiled without
 `treesit`, we'll eventually provide a fallback mode.
 
-<!-- ![Screenshot](ss.png?raw=true "Screenshot") -->
+![gif of files](./assets/p4-ts-mode.gif)
 
 ## Installation
 
@@ -86,3 +86,4 @@ To contribute, just open a pull request!
 
 
 [tree-sitter]: https://tree-sitter.github.io/tree-sitter/
+[p4-grammar]: https://github.com/oxidecomputer/tree-sitter-p4
