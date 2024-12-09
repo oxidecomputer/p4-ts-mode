@@ -81,6 +81,14 @@
       "_"
       ] @font-lock-keyword-face)
 
+   :feature 'comment
+   :language 'p4
+   '((comment) @font-lock-comment-face)
+
+   :feature 'number
+   :language 'p4
+   '((number) @font-lock-number-face)
+
    :feature 'const-builtin
    :language 'p4
    '([
@@ -88,10 +96,6 @@
       "false"
       (direction)
       ] @font-lock-constant-face)
-
-   :feature 'number
-   :language 'p4
-   '((number) @font-lock-number-face)
 
    :feature 'preproc-keyword
    :language 'p4
@@ -120,17 +124,9 @@
    :language 'p4
    '((type_identifier) @font-lock-type-face)
 
-   :feature 'var-decl
-   :language 'p4
-   '((var_decl (identifier)) @font-lock-variable-name-face)
-
    :feature 'function-name
    :language 'p4
    '((method_identifier) @font-lock-function-name-face)
-
-   :feature 'comment
-   :language 'p4
-   '((comment) @font-lock-comment-face)
 
    :feature 'preproc
    :language 'p4
@@ -214,10 +210,10 @@
     (setq-local treesit-font-lock-settings p4-ts--font-lock-settings)
     (setq-local treesit-font-lock-level 4)
     (setq-local treesit-font-lock-feature-list
-                '((comment number preproc-keyword const-builtin)
-                  (type ext-type type-identifier function-name var-decl)
-                  (keyword)
-                  (annotation preproc)))
+                '((keyword comment number const-builtin preproc-keyword)
+                  (type ext-type type-identifier)
+                  (function-name)
+                  (preproc annotation)))
 
     ;; cscope
     (cscope-minor-mode)
