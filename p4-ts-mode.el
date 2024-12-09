@@ -1,4 +1,4 @@
-;; p4-ts-mode.el --- Major mode for the P4_16 programming language  -*- lexical-binding: t; -*-
+;;; p4-ts-mode.el --- Major mode for the P4_16 programming language  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2024- Oxide Computer
 ;; Author: Zeeshan Lakhani <zeeshan@oxidecomputer.com>
