@@ -116,7 +116,9 @@
       "int"
       "bit"
       "tuple"
-      "varbit"] @font-lock-type-face)
+      "varbit"
+      "packet_in"
+      "packet_out"] @font-lock-type-face)
 
    :feature 'ext-type
    :language 'p4
@@ -130,7 +132,8 @@
 
    :feature 'function-name
    :language 'p4
-   '((method_identifier) @font-lock-function-name-face)
+   '([(method_identifier)
+      (method_not_constant)] @font-lock-function-name-face)
 
    :feature 'preproc
    :language 'p4
