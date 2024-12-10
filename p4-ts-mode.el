@@ -210,8 +210,8 @@
     (setq-local treesit-font-lock-settings p4-ts--font-lock-settings)
     (setq-local treesit-font-lock-level 4)
     (setq-local treesit-font-lock-feature-list
-                '((keyword comment number const-builtin preproc-keyword)
-                  (type ext-type type-identifier)
+                '((comment const-builtin)
+                  (keyword preproc-keyword number type ext-type type-identifier)
                   (function-name)
                   (preproc annotation)))
 
