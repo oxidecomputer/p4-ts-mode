@@ -95,6 +95,7 @@
    '([
       "true"
       "false"
+      (identifier_preproc)
       ] @font-lock-constant-face)
 
    :feature 'binop
@@ -132,8 +133,8 @@
 
    :feature 'function-name
    :language 'p4
-   '([(method_identifier)
-      (method_not_constant)] @font-lock-function-name-face)
+   '([(method_not_constant)
+      (method_identifier)] @font-lock-function-name-face)
 
    :feature 'preproc
    :language 'p4
