@@ -79,6 +79,7 @@
       "meters"
       "counters"
       "_"
+      (direction)
       ] @font-lock-keyword-face)
 
    :feature 'comment
@@ -94,7 +95,6 @@
    '([
       "true"
       "false"
-      (direction)
       ] @font-lock-constant-face)
 
    :feature 'binop
