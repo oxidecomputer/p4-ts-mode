@@ -97,6 +97,10 @@
       (direction)
       ] @font-lock-constant-face)
 
+   :feature 'binop
+   :language 'p4
+   '((binop) @font-lock-operator-face)
+
    :feature 'preproc-keyword
    :language 'p4
    '(["#define"
@@ -210,7 +214,7 @@
     (setq-local treesit-font-lock-settings p4-ts--font-lock-settings)
     (setq-local treesit-font-lock-level 4)
     (setq-local treesit-font-lock-feature-list
-                '((comment const-builtin)
+                '((comment const-builtin binop)
                   (keyword preproc-keyword number type ext-type type-identifier)
                   (function-name)
                   (preproc annotation)))
