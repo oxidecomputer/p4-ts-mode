@@ -200,7 +200,7 @@
   (if (and (treesit-available-p) (boundp 'treesit-language-source-alist))
       (let ((treesit-language-source-alist
              (cons
-              '(p4 . ("https://github.com/oxidecomputer/tree-sitter-p4" "zl/grammar-adds+checks" "src"))
+              '(p4 . ("https://github.com/oxidecomputer/tree-sitter-p4" "main" "src"))
               treesit-language-source-alist)))
         (treesit-install-language-grammar 'p4))
     (display-warning 'treesit "Emacs' treesit package does not appear to be available")))
