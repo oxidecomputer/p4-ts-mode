@@ -2,12 +2,19 @@
 
 ;; Copyright (C) 2024- Oxide Computer
 ;; Author: Zeeshan Lakhani <zeeshan@oxidecomputer.com>
+;;
 ;; Maintainer: Zeeshan Lakhani <zeeshan@oxidecomputer.com>
 ;; Created: 04 December 2024
 ;; Package-Requires: ((emacs "29.1"))
 ;; Version: 0.1
 ;; Keywords: languages p4_16 p4
 ;; Homepage: https://github.com/oxidecomputer/p4-ts-mode
+
+;; This file is NOT part of GNU Emacs.
+
+;; This program is subject to the terms of the Mozilla Public
+;; License, v. 2.0. If a copy of the MPL was not distributed with this
+;; file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 ;;; Commentary:
 
@@ -35,7 +42,7 @@
   :group 'languages)
 
 (defcustom p4-ts-indent-offset 4
-  "Indentation offset for p4-ts-mode."
+  "Indentation offset for `p4-ts-mode'."
   :type 'integer
   :safe 'integerp
   :group 'p4-ts)
@@ -151,13 +158,13 @@
     (modify-syntax-entry  ?*  ". 23"   st)
     (modify-syntax-entry  ?\n  "> b"   st)
     st)
-  "Syntax table for p4-ts-mode.")
+  "Syntax table for `p4-ts-mode'.")
 
 (defvar p4-ts-map
   (let ((map (make-keymap)))
     (define-key map "\C-j" 'newline-and-indent)
     map)
-  "Keymap for p4-ts-mode.")
+  "Keymap for `p4-ts-mode'.")
 
 ;;; Indentation
 
@@ -192,7 +199,7 @@
     ("Headers"       "^ *header +\\([A-Za-z0-9_]*\\)"       1)
     ("Header Unions" "^ *header_union +\\([A-Za-z0-9_]*\\)" 1)
     ("Structs"       "^ *struct +\\([A-Za-z0-9_]*\\)"       1))
-  "Imenu generic expression for p4-ts-mode.")
+  "Imenu generic expression for `p4-ts-mode'.")
 
 (defun p4-ts-install-grammar ()
   "Install the Gleam tree-sitter grammar."
