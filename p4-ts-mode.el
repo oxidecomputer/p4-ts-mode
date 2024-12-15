@@ -5,16 +5,13 @@
 ;;
 ;; Maintainer: Zeeshan Lakhani <zeeshan@oxidecomputer.com>
 ;; Created: 04 December 2024
-;; Package-Requires: ((emacs "29.1"))
+;; Package-Requires: ((emacs "29.1") (xcscope "1.0"))
 ;; Version: 0.1
 ;; Keywords: languages p4_16 p4
 ;; Homepage: https://github.com/oxidecomputer/p4-ts-mode
+;; SPDX-License-Identifier: MPL-2.0
 
-;; This file is NOT part of GNU Emacs.
-
-;; This program is subject to the terms of the Mozilla Public
-;; License, v. 2.0. If a copy of the MPL was not distributed with this
-;; file, You can obtain one at https://mozilla.org/MPL/2.0/.
+;; This file is not part of GNU Emacs.
 
 ;;; Commentary:
 
@@ -262,8 +259,6 @@
                  '("\\.p4\\'" . p4-ts-mode)))
 
 
+;;; _
 (provide 'p4-ts-mode)
-
-;;; Footer:
-
 ;;; p4-ts-mode.el ends here
