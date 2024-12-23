@@ -1,5 +1,7 @@
 # p4-ts-mode: An Emacs Major Mode for P4 Using Tree-sitter
 
+[![MELPA](https://melpa.org/packages/p4-ts-mode-badge.svg)][melpa-host]
+
 P4 (`P4_16`) mode for emacs using tree-sitter.
 
 This mode uses [tree-sitter][tree-sitter], requiring Emacs 29+'s `treesit`
@@ -12,9 +14,32 @@ If you're running an Emacs that's older than 29 or a version compiled without
 
 ## Installation
 
-Currently this project is not yet on MELPA, but you can fetch and install it
-directly through this repository, depending on your package manager/builder of
-choice.
+This project is hosted on [MELPA][melpa-host], and this is the recommended way
+to install the package. To add MELPA as a package repository, add the following
+to your Emacs `init` file:
+
+```elisp
+(require 'package)
+;; Add MELPA to archives
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+;; Load and activate packages
+(package-initialize)
+```
+
+Once you've added MELPA, you can install `p4-ts-mode` based on your package
+manager. Some examples are provided below.
+
+### Doom Emacs
+
+```elisp
+(package! p4-ts-mode)
+```
+
+### straight.el
+
+```elisp
+(straight-use-package 'p4-ts-mode)
+```
 
 ### quelpa
 
@@ -22,17 +47,10 @@ choice.
 (quelpa '(p4-ts-mode :repo "oxidecomputer/p4-ts-mode" :fetcher github))
 ```
 
-### Doom Emacs
+### Manually from MELPA
 
-```elisp
-(package! p4-ts-mode :recipe (:host github :repo "oxidecomputer/p4-ts-mode"))
-```
-
-### straight.el
-
-```elisp
-(straight-use-package
- '(p4-ts-mode :type git :host github :repo "oxidecomputer/p4-ts-mode"))
+```sh
+M-x package-install RET p4-ts-mode RET
 ```
 
 ## Setup
@@ -85,5 +103,6 @@ To contribute, just open a pull request!
   [https://github.com/p4lang/tutorials/blob/master/vm/p4_16-mode.el](https://github.com/p4lang/tutorials/blob/master/vm/p4_16-mode.el)
 
 
+[melpa-host]: https://melpa.org/#/p4-ts-mode
 [tree-sitter]: https://tree-sitter.github.io/tree-sitter/
 [p4-grammar]: https://github.com/oxidecomputer/tree-sitter-p4
